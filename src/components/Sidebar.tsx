@@ -61,7 +61,9 @@ import {
   Webhook,
   FileBarChart,
   Download,
-  Upload, // Added for Data Import
+  Upload,
+  LayoutTemplate,
+  Package2, // Added for Assets
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -74,6 +76,8 @@ const navigation = [
   { name: "Projects", href: "/projects", icon: FolderOpen },
   { name: "Tasks", href: "/tasks", icon: CheckSquare },
   { name: "Documents", href: "/documents", icon: File },
+  { name: "Templates", href: "/templates", icon: LayoutTemplate },
+  { name: "Assets", href: "/assets", icon: Package2 }, // Added Assets
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
@@ -101,7 +105,7 @@ const navigation = [
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Custom Reports", href: "/custom-reports", icon: FileBarChart },
   { name: "Data Export", href: "/data-export", icon: Download },
-  { name: "Data Import", href: "/data-import", icon: Upload }, // Added Data Import
+  { name: "Data Import", href: "/data-import", icon: Upload },
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
   { name: "Audit Log", href: "/audit-log", icon: ScrollText },
   { name: "System Status", href: "/system-status", icon: Activity },

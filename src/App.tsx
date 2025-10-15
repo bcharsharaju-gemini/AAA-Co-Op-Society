@@ -64,7 +64,9 @@ import APIKeys from "./pages/APIKeys";
 import Webhooks from "./pages/Webhooks";
 import CustomReports from "./pages/CustomReports";
 import DataExport from "./pages/DataExport";
-import DataImport from "./pages/DataImport"; // Import the DataImport page
+import DataImport from "./pages/DataImport";
+import Templates from "./pages/Templates";
+import Assets from "./pages/Assets"; // Import the Assets page
 
 const queryClient = new QueryClient();
 
@@ -83,6 +85,7 @@ const App = () => (
           <Route path="/projects" element={<Projects />} />
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/documents" element={<Documents />} />
+          <Route path="/templates" element={<Templates />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/notifications" element={<Notifications />} />
@@ -100,6 +103,9 @@ const App = () => (
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/accounting" element={<Accounting />} />
           <Route path="/reports" element={<Reports />} />
+          <Route path="/custom-reports" element={<CustomReports />} />
+          <Route path="/data-export" element={<DataExport />} />
+          <Route path="/data-import" element={<DataImport />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/audit-log" element={<AuditLog />} />
           <Route path="/system-status" element={<SystemStatus />} />
@@ -120,9 +126,7 @@ const App = () => (
           <Route path="/subscription-plans" element={<SubscriptionPlans />} />
           <Route path="/api-keys" element={<APIKeys />} />
           <Route path="/webhooks" element={<Webhooks />} />
-          <Route path="/custom-reports" element={<CustomReports />} />
-          <Route path="/data-export" element={<DataExport />} />
-          <Route path="/data-import" element={<DataImport />} /> {/* Add route for Data Import */}
+          <Route path="/assets" element={<Assets />} /> {/* Add route for Assets */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact-us" element={<ContactUs />} />
