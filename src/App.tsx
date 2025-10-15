@@ -73,7 +73,9 @@ import Services from "./pages/Services";
 import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
 import Shipments from "./pages/Shipments";
-import Returns from "./pages/Returns"; // Import the Returns page
+import Returns from "./pages/Returns";
+import Promotions from "./pages/Promotions";
+import Campaigns from "./pages/Campaigns"; // Import the Campaigns page
 
 const queryClient = new QueryClient();
 
@@ -100,7 +102,9 @@ const App = () => (
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/shipments" element={<Shipments />} />
-          <Route path="/returns" element={<Returns />} /> {/* Add route for Returns */}
+          <Route path="/returns" element={<Returns />} />
+          <Route path="/promotions" element={<Promotions />} />
+          <Route path="/campaigns" element={<Campaigns />} /> {/* Add route for Campaigns */}
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/notifications" element={<Notifications />} />

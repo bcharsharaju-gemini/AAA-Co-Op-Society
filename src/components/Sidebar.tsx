@@ -17,7 +17,7 @@ import {
   PiggyBank,
   Receipt,
   BriefcaseBusiness,
-  Truck, // Used for Shipments
+  Truck,
   DollarSign,
   FolderOpen,
   CheckSquare,
@@ -52,7 +52,7 @@ import {
   BookOpenText,
   GraduationCap,
   Link,
-  Megaphone,
+  Megaphone, // Used for Campaigns
   LayoutDashboard,
   Sparkles,
   Banknote,
@@ -67,7 +67,8 @@ import {
   Boxes,
   Handshake,
   ShoppingCart,
-  RotateCcw, // Added for Returns
+  RotateCcw,
+  Gift,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -87,8 +88,10 @@ const navigation = [
   { name: "Products", href: "/products", icon: Package },
   { name: "Services", href: "/services", icon: Handshake },
   { name: "Orders", href: "/orders", icon: ShoppingCart },
-  { name: "Shipments", href: "/shipments", icon: Truck }, // Changed to Truck
+  { name: "Shipments", href: "/shipments", icon: Truck },
   { name: "Returns", href: "/returns", icon: RotateCcw },
+  { name: "Promotions", href: "/promotions", icon: Gift },
+  { name: "Campaigns", href: "/campaigns", icon: Megaphone }, // Added Campaigns
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
