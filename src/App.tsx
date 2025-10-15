@@ -24,7 +24,9 @@ import Payroll from "./pages/Payroll";
 import Projects from "./pages/Projects";
 import Tasks from "./pages/Tasks";
 import Documents from "./pages/Documents";
-import Calendar from "./pages/Calendar"; // Import the Calendar page
+import Calendar from "./pages/Calendar";
+import Messages from "./pages/Messages";
+import Notifications from "./pages/Notifications"; // Import the Notifications page
 
 const queryClient = new QueryClient();
 
@@ -43,6 +45,8 @@ const App = () => (
           <Route path="/projects" element={<Projects />} />
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/documents" element={<Documents />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/messages" element={<Messages />} />
           <Route path="/shares" element={<Shares />} />
           <Route path="/savings" element={<Savings />} />
           <Route path="/loans" element={<Loans />} />
@@ -55,7 +59,7 @@ const App = () => (
           <Route path="/accounting" element={<Accounting />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/calendar" element={<Calendar />} /> {/* Add route for Calendar */}
+          <Route path="/notifications" element={<Notifications />} /> {/* Add route for Notifications */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

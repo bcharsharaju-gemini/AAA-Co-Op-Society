@@ -22,7 +22,9 @@ import {
   FolderOpen,
   CheckSquare,
   File,
-  CalendarDays, // Added for Calendar
+  CalendarDays,
+  MessageSquare,
+  Bell, // Added for Notifications
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -34,7 +36,9 @@ const navigation = [
   { name: "Projects", href: "/projects", icon: FolderOpen },
   { name: "Tasks", href: "/tasks", icon: CheckSquare },
   { name: "Documents", href: "/documents", icon: File },
-  { name: "Calendar", href: "/calendar", icon: CalendarDays }, // Added Calendar
+  { name: "Calendar", href: "/calendar", icon: CalendarDays },
+  { name: "Messages", href: "/messages", icon: MessageSquare },
+  { name: "Notifications", href: "/notifications", icon: Bell }, // Added Notifications
   { name: "Payroll", href: "/payroll", icon: DollarSign },
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
