@@ -27,13 +27,15 @@ import {
   Bell,
   UsersRound,
   BarChart3,
-  LifeBuoy, // Used for Support
+  LifeBuoy,
   ShieldCheck,
   Users2,
   ScrollText,
   Activity,
   BellRing,
-  HelpCircle, // Changed from QuestionCircle to HelpCircle
+  HelpCircle,
+  Puzzle,
+  Wrench, // Added for Maintenance
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -67,8 +69,10 @@ const navigation = [
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
   { name: "Audit Log", href: "/audit-log", icon: ScrollText },
   { name: "System Status", href: "/system-status", icon: Activity },
+  { name: "Integrations", href: "/integrations", icon: Puzzle },
+  { name: "Maintenance", href: "/maintenance", icon: Wrench }, // Added Maintenance
   { name: "Support", href: "/support", icon: LifeBuoy },
-  { name: "Help Center", href: "/help-center", icon: HelpCircle }, // Changed icon here
+  { name: "Help Center", href: "/help-center", icon: HelpCircle },
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 
