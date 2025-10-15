@@ -12,7 +12,8 @@ import Savings from "./pages/Savings";
 import Loans from "./pages/Loans";
 import Deposits from "./pages/Deposits";
 import Withdrawals from "./pages/Withdrawals";
-import Accounting from "./pages/Accounting"; // Import the Accounting page
+import Accounting from "./pages/Accounting";
+import Settings from "./pages/Settings"; // Import the Settings page
 
 const queryClient = new QueryClient();
 
@@ -30,7 +31,8 @@ const App = () => (
           <Route path="/loans" element={<Loans />} />
           <Route path="/deposits" element={<Deposits />} />
           <Route path="/withdrawals" element={<Withdrawals />} />
-          <Route path="/accounting" element={<Accounting />} /> {/* Add route for Accounting */}
+          <Route path="/accounting" element={<Accounting />} />
+          <Route path="/settings" element={<Settings />} /> {/* Add route for Settings */}
           <Route path="/reports" element={<Reports />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
