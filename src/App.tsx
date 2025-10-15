@@ -66,7 +66,9 @@ import CustomReports from "./pages/CustomReports";
 import DataExport from "./pages/DataExport";
 import DataImport from "./pages/DataImport";
 import Templates from "./pages/Templates";
-import Assets from "./pages/Assets"; // Import the Assets page
+import Assets from "./pages/Assets";
+import Inventory from "./pages/Inventory";
+import Products from "./pages/Products"; // Import the Products page
 
 const queryClient = new QueryClient();
 
@@ -86,6 +88,9 @@ const App = () => (
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/documents" element={<Documents />} />
           <Route path="/templates" element={<Templates />} />
+          <Route path="/assets" element={<Assets />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/products" element={<Products />} /> {/* Add route for Products */}
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/notifications" element={<Notifications />} />
@@ -126,7 +131,6 @@ const App = () => (
           <Route path="/subscription-plans" element={<SubscriptionPlans />} />
           <Route path="/api-keys" element={<APIKeys />} />
           <Route path="/webhooks" element={<Webhooks />} />
-          <Route path="/assets" element={<Assets />} /> {/* Add route for Assets */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact-us" element={<ContactUs />} />

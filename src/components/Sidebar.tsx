@@ -56,14 +56,15 @@ import {
   LayoutDashboard,
   Sparkles,
   Banknote,
-  Package,
+  Package, // Used for Products
   Key,
   Webhook,
   FileBarChart,
   Download,
   Upload,
   LayoutTemplate,
-  Package2, // Added for Assets
+  Package2,
+  Boxes,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -77,7 +78,9 @@ const navigation = [
   { name: "Tasks", href: "/tasks", icon: CheckSquare },
   { name: "Documents", href: "/documents", icon: File },
   { name: "Templates", href: "/templates", icon: LayoutTemplate },
-  { name: "Assets", href: "/assets", icon: Package2 }, // Added Assets
+  { name: "Assets", href: "/assets", icon: Package2 },
+  { name: "Inventory", href: "/inventory", icon: Boxes },
+  { name: "Products", href: "/products", icon: Package }, // Added Products
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
