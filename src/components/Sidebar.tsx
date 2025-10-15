@@ -24,7 +24,9 @@ import {
   File,
   CalendarDays,
   MessageSquare,
-  Bell, // Added for Notifications
+  Bell,
+  UsersRound,
+  BarChart3, // Added for Analytics
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -38,7 +40,8 @@ const navigation = [
   { name: "Documents", href: "/documents", icon: File },
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
-  { name: "Notifications", href: "/notifications", icon: Bell }, // Added Notifications
+  { name: "Notifications", href: "/notifications", icon: Bell },
+  { name: "Team", href: "/team", icon: UsersRound },
   { name: "Payroll", href: "/payroll", icon: DollarSign },
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
@@ -51,6 +54,7 @@ const navigation = [
   { name: "Invoices", href: "/invoices", icon: Receipt },
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
+  { name: "Analytics", href: "/analytics", icon: BarChart3 }, // Added Analytics
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 
