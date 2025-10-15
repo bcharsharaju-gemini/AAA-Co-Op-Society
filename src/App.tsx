@@ -8,7 +8,9 @@ import NotFound from "./pages/NotFound";
 import Members from "./pages/Members";
 import Shares from "./pages/Shares";
 import Reports from "./pages/Reports";
-import Savings from "./pages/Savings"; // Import the Savings page
+import Savings from "./pages/Savings";
+import Loans from "./pages/Loans";
+import Deposits from "./pages/Deposits"; // Import the Deposits page
 
 const queryClient = new QueryClient();
 
@@ -22,7 +24,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/members" element={<Members />} />
           <Route path="/shares" element={<Shares />} />
-          <Route path="/savings" element={<Savings />} /> {/* Add route for Savings */}
+          <Route path="/savings" element={<Savings />} />
+          <Route path="/loans" element={<Loans />} />
+          <Route path="/deposits" element={<Deposits />} /> {/* Add route for Deposits */}
           <Route path="/reports" element={<Reports />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
