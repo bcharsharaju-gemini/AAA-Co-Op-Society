@@ -41,7 +41,9 @@ import {
   Shield,
   Palette,
   ShieldQuestion,
-  ClipboardList, // Added for Terms of Service
+  ClipboardList,
+  Mail,
+  Info, // Added for About Us
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -84,7 +86,9 @@ const navigation = [
   { name: "User Activity", href: "/user-activity", icon: UserCog },
   { name: "Appearance Settings", href: "/appearance-settings", icon: Palette },
   { name: "Privacy Policy", href: "/privacy-policy", icon: ShieldQuestion },
-  { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList }, // Added Terms of Service
+  { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList },
+  { name: "Contact Us", href: "/contact-us", icon: Mail },
+  { name: "About Us", href: "/about-us", icon: Info }, // Added About Us
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 
