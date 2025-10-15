@@ -40,7 +40,9 @@ import HelpCenter from "./pages/HelpCenter";
 import Integrations from "./pages/Integrations";
 import Maintenance from "./pages/Maintenance";
 import Feedback from "./pages/Feedback";
-import UserActivity from "./pages/UserActivity"; // Import the UserActivity page
+import UserActivity from "./pages/UserActivity";
+import Security from "./pages/Security";
+import AppearanceSettings from "./pages/AppearanceSettings"; // Import the AppearanceSettings page
 
 const queryClient = new QueryClient();
 
@@ -87,7 +89,9 @@ const App = () => (
           <Route path="/integrations" element={<Integrations />} />
           <Route path="/maintenance" element={<Maintenance />} />
           <Route path="/feedback" element={<Feedback />} />
-          <Route path="/user-activity" element={<UserActivity />} /> {/* Add route for User Activity */}
+          <Route path="/user-activity" element={<UserActivity />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/appearance-settings" element={<AppearanceSettings />} /> {/* Add route for Appearance Settings */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -37,7 +37,9 @@ import {
   Puzzle,
   Wrench,
   MessageSquarePlus,
-  UserCog, // Added for User Activity
+  UserCog,
+  Shield,
+  Palette, // Added for Appearance Settings
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -56,6 +58,7 @@ const navigation = [
   { name: "Team", href: "/team", icon: UsersRound },
   { name: "Users", href: "/users", icon: Users2 },
   { name: "Roles & Permissions", href: "/roles-permissions", icon: ShieldCheck },
+  { name: "Security", href: "/security", icon: Shield },
   { name: "Payroll", href: "/payroll", icon: DollarSign },
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
@@ -76,7 +79,8 @@ const navigation = [
   { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
-  { name: "User Activity", href: "/user-activity", icon: UserCog }, // Added User Activity
+  { name: "User Activity", href: "/user-activity", icon: UserCog },
+  { name: "Appearance Settings", href: "/appearance-settings", icon: Palette }, // Added Appearance Settings
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 
