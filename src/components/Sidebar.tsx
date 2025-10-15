@@ -18,7 +18,9 @@ import {
   Receipt,
   BriefcaseBusiness,
   Truck,
-  DollarSign, // Added for Payroll
+  DollarSign,
+  FolderOpen,
+  CheckSquare, // Added for Tasks
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -27,7 +29,9 @@ const navigation = [
   { name: "Members", href: "/members", icon: Users },
   { name: "Clients", href: "/clients", icon: BriefcaseBusiness },
   { name: "Vendors", href: "/vendors", icon: Truck },
-  { name: "Payroll", href: "/payroll", icon: DollarSign }, // Added Payroll
+  { name: "Projects", href: "/projects", icon: FolderOpen },
+  { name: "Tasks", href: "/tasks", icon: CheckSquare }, // Added Tasks
+  { name: "Payroll", href: "/payroll", icon: DollarSign },
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
   { name: "Loans", href: "/loans", icon: HandCoins },
