@@ -16,7 +16,9 @@ import Accounting from "./pages/Accounting";
 import Settings from "./pages/Settings";
 import Transactions from "./pages/Transactions";
 import Expenses from "./pages/Expenses";
-import Budgets from "./pages/Budgets"; // Import the Budgets page
+import Budgets from "./pages/Budgets";
+import Invoices from "./pages/Invoices";
+import Clients from "./pages/Clients"; // Import the Clients page
 
 const queryClient = new QueryClient();
 
@@ -36,10 +38,12 @@ const App = () => (
           <Route path="/withdrawals" element={<Withdrawals />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/expenses" element={<Expenses />} />
+          <Route path="/budgets" element={<Budgets />} />
+          <Route path="/invoices" element={<Invoices />} />
           <Route path="/accounting" element={<Accounting />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/budgets" element={<Budgets />} /> {/* Add route for Budgets */}
+          <Route path="/clients" element={<Clients />} /> {/* Add route for Clients */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -14,13 +14,16 @@ import {
   Settings,
   CreditCard,
   ReceiptText,
-  PiggyBank, // Added for Budgets
+  PiggyBank,
+  Receipt,
+  BriefcaseBusiness, // Added for Clients
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
   { name: "Members", href: "/members", icon: Users },
+  { name: "Clients", href: "/clients", icon: BriefcaseBusiness }, // Added Clients
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
   { name: "Loans", href: "/loans", icon: HandCoins },
@@ -28,7 +31,8 @@ const navigation = [
   { name: "Withdrawals", href: "/withdrawals", icon: Wallet },
   { name: "Transactions", href: "/transactions", icon: CreditCard },
   { name: "Expenses", href: "/expenses", icon: ReceiptText },
-  { name: "Budgets", href: "/budgets", icon: PiggyBank }, // Added Budgets
+  { name: "Budgets", href: "/budgets", icon: PiggyBank },
+  { name: "Invoices", href: "/invoices", icon: Receipt },
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Settings", href: "/settings", icon: Settings },
