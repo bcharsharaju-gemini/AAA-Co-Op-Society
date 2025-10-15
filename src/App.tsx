@@ -70,7 +70,8 @@ import Assets from "./pages/Assets";
 import Inventory from "./pages/Inventory";
 import Products from "./pages/Products";
 import Services from "./pages/Services";
-import Orders from "./pages/Orders"; // Import the Orders page
+import Orders from "./pages/Orders";
+import Customers from "./pages/Customers"; // Import the Customers page
 
 const queryClient = new QueryClient();
 
@@ -94,7 +95,8 @@ const App = () => (
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/products" element={<Products />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/orders" element={<Orders />} /> {/* Add route for Orders */}
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/customers" element={<Customers />} /> {/* Add route for Customers */}
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/notifications" element={<Notifications />} />

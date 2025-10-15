@@ -3,7 +3,7 @@
 import { NavLink } from "react-router-dom";
 import {
   Home,
-  Users,
+  Users, // Used for Customers
   PieChart,
   Landmark,
   HandCoins,
@@ -66,7 +66,7 @@ import {
   Package2,
   Boxes,
   Handshake,
-  ShoppingCart, // Added for Orders
+  ShoppingCart,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -75,6 +75,7 @@ const navigation = [
   { name: "Getting Started", href: "/getting-started", icon: Rocket },
   { name: "Members", href: "/members", icon: Users },
   { name: "Clients", href: "/clients", icon: BriefcaseBusiness },
+  { name: "Customers", href: "/customers", icon: Users }, // Added Customers
   { name: "Vendors", href: "/vendors", icon: Truck },
   { name: "Projects", href: "/projects", icon: FolderOpen },
   { name: "Tasks", href: "/tasks", icon: CheckSquare },
@@ -84,7 +85,7 @@ const navigation = [
   { name: "Inventory", href: "/inventory", icon: Boxes },
   { name: "Products", href: "/products", icon: Package },
   { name: "Services", href: "/services", icon: Handshake },
-  { name: "Orders", href: "/orders", icon: ShoppingCart }, // Added Orders
+  { name: "Orders", href: "/orders", icon: ShoppingCart },
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
