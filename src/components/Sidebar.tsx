@@ -59,7 +59,9 @@ import {
   Package,
   Key,
   Webhook,
-  FileBarChart, // Added for Custom Reports
+  FileBarChart,
+  Download,
+  Upload, // Added for Data Import
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -97,7 +99,9 @@ const navigation = [
   { name: "Webhooks", href: "/webhooks", icon: Webhook },
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
-  { name: "Custom Reports", href: "/custom-reports", icon: FileBarChart }, // Added Custom Reports
+  { name: "Custom Reports", href: "/custom-reports", icon: FileBarChart },
+  { name: "Data Export", href: "/data-export", icon: Download },
+  { name: "Data Import", href: "/data-import", icon: Upload }, // Added Data Import
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
   { name: "Audit Log", href: "/audit-log", icon: ScrollText },
   { name: "System Status", href: "/system-status", icon: Activity },

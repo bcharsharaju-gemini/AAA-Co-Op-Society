@@ -62,7 +62,9 @@ import Billing from "./pages/Billing";
 import SubscriptionPlans from "./pages/SubscriptionPlans";
 import APIKeys from "./pages/APIKeys";
 import Webhooks from "./pages/Webhooks";
-import CustomReports from "./pages/CustomReports"; // Import the CustomReports page
+import CustomReports from "./pages/CustomReports";
+import DataExport from "./pages/DataExport";
+import DataImport from "./pages/DataImport"; // Import the DataImport page
 
 const queryClient = new QueryClient();
 
@@ -118,7 +120,9 @@ const App = () => (
           <Route path="/subscription-plans" element={<SubscriptionPlans />} />
           <Route path="/api-keys" element={<APIKeys />} />
           <Route path="/webhooks" element={<Webhooks />} />
-          <Route path="/custom-reports" element={<CustomReports />} /> {/* Add route for Custom Reports */}
+          <Route path="/custom-reports" element={<CustomReports />} />
+          <Route path="/data-export" element={<DataExport />} />
+          <Route path="/data-import" element={<DataImport />} /> {/* Add route for Data Import */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact-us" element={<ContactUs />} />
