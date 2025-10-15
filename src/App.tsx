@@ -10,7 +10,7 @@ import Shares from "./pages/Shares";
 import Reports from "./pages/Reports";
 import Savings from "./pages/Savings";
 import Loans from "./pages/Loans";
-import Deposits from "./pages/Deposits";
+import Deposits from "././pages/Deposits";
 import Withdrawals from "./pages/Withdrawals";
 import Accounting from "./pages/Accounting";
 import Settings from "./pages/Settings";
@@ -32,7 +32,9 @@ import Analytics from "./pages/Analytics";
 import Support from "./pages/Support";
 import Profile from "./pages/Profile";
 import RolesPermissions from "./pages/RolesPermissions";
-import Users from "./pages/Users"; // Import the Users page
+import Users from "./pages/Users";
+import AuditLog from "./pages/AuditLog";
+import SystemStatus from "./pages/SystemStatus"; // Import the SystemStatus page
 
 const queryClient = new QueryClient();
 
@@ -56,6 +58,7 @@ const App = () => (
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/team" element={<Team />} />
           <Route path="/roles-permissions" element={<RolesPermissions />} />
+          <Route path="/users" element={<Users />} />
           <Route path="/shares" element={<Shares />} />
           <Route path="/savings" element={<Savings />} />
           <Route path="/loans" element={<Loans />} />
@@ -68,10 +71,11 @@ const App = () => (
           <Route path="/accounting" element={<Accounting />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/audit-log" element={<AuditLog />} />
           <Route path="/support" element={<Support />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/users" element={<Users />} /> {/* Add route for Users */}
+          <Route path="/system-status" element={<SystemStatus />} /> {/* Add route for System Status */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

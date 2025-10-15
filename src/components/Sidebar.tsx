@@ -3,7 +3,7 @@
 import { NavLink } from "react-router-dom";
 import {
   Home,
-  Users, // Used for Members
+  Users,
   PieChart,
   Landmark,
   HandCoins,
@@ -25,11 +25,13 @@ import {
   CalendarDays,
   MessageSquare,
   Bell,
-  UsersRound, // Used for Team
+  UsersRound,
   BarChart3,
   LifeBuoy,
   ShieldCheck,
-  Users2, // Added for Users
+  Users2,
+  ScrollText,
+  Activity, // Added for System Status
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -45,7 +47,7 @@ const navigation = [
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
   { name: "Team", href: "/team", icon: UsersRound },
-  { name: "Users", href: "/users", icon: Users2 }, // Added Users with Users2 icon
+  { name: "Users", href: "/users", icon: Users2 },
   { name: "Roles & Permissions", href: "/roles-permissions", icon: ShieldCheck },
   { name: "Payroll", href: "/payroll", icon: DollarSign },
   { name: "Shares", href: "/shares", icon: PieChart },
@@ -60,6 +62,8 @@ const navigation = [
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
+  { name: "Audit Log", href: "/audit-log", icon: ScrollText },
+  { name: "System Status", href: "/system-status", icon: Activity }, // Added System Status
   { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Settings", href: "/settings", icon: Settings },
 ];
