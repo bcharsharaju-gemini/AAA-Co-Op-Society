@@ -39,7 +39,9 @@ import {
   MessageSquarePlus,
   UserCog,
   Shield,
-  Palette, // Added for Appearance Settings
+  Palette,
+  ShieldQuestion,
+  ClipboardList, // Added for Terms of Service
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -80,7 +82,9 @@ const navigation = [
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
   { name: "User Activity", href: "/user-activity", icon: UserCog },
-  { name: "Appearance Settings", href: "/appearance-settings", icon: Palette }, // Added Appearance Settings
+  { name: "Appearance Settings", href: "/appearance-settings", icon: Palette },
+  { name: "Privacy Policy", href: "/privacy-policy", icon: ShieldQuestion },
+  { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList }, // Added Terms of Service
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 

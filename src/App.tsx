@@ -42,7 +42,9 @@ import Maintenance from "./pages/Maintenance";
 import Feedback from "./pages/Feedback";
 import UserActivity from "./pages/UserActivity";
 import Security from "./pages/Security";
-import AppearanceSettings from "./pages/AppearanceSettings"; // Import the AppearanceSettings page
+import AppearanceSettings from "./pages/AppearanceSettings";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService"; // Import the TermsOfService page
 
 const queryClient = new QueryClient();
 
@@ -91,7 +93,9 @@ const App = () => (
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/user-activity" element={<UserActivity />} />
           <Route path="/security" element={<Security />} />
-          <Route path="/appearance-settings" element={<AppearanceSettings />} /> {/* Add route for Appearance Settings */}
+          <Route path="/appearance-settings" element={<AppearanceSettings />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} /> {/* Add route for Terms of Service */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
