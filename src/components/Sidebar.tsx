@@ -35,7 +35,9 @@ import {
   BellRing,
   HelpCircle,
   Puzzle,
-  Wrench, // Added for Maintenance
+  Wrench,
+  MessageSquarePlus,
+  UserCog, // Added for User Activity
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -70,9 +72,11 @@ const navigation = [
   { name: "Audit Log", href: "/audit-log", icon: ScrollText },
   { name: "System Status", href: "/system-status", icon: Activity },
   { name: "Integrations", href: "/integrations", icon: Puzzle },
-  { name: "Maintenance", href: "/maintenance", icon: Wrench }, // Added Maintenance
+  { name: "Maintenance", href: "/maintenance", icon: Wrench },
   { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
+  { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
+  { name: "User Activity", href: "/user-activity", icon: UserCog }, // Added User Activity
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 

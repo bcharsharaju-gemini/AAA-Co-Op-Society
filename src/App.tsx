@@ -38,7 +38,9 @@ import SystemStatus from "./pages/SystemStatus";
 import NotificationSettings from "./pages/NotificationSettings";
 import HelpCenter from "./pages/HelpCenter";
 import Integrations from "./pages/Integrations";
-import Maintenance from "./pages/Maintenance"; // Import the Maintenance page
+import Maintenance from "./pages/Maintenance";
+import Feedback from "./pages/Feedback";
+import UserActivity from "./pages/UserActivity"; // Import the UserActivity page
 
 const queryClient = new QueryClient();
 
@@ -83,7 +85,9 @@ const App = () => (
           <Route path="/notification-settings" element={<NotificationSettings />} />
           <Route path="/help-center" element={<HelpCenter />} />
           <Route path="/integrations" element={<Integrations />} />
-          <Route path="/maintenance" element={<Maintenance />} /> {/* Add route for Maintenance */}
+          <Route path="/maintenance" element={<Maintenance />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/user-activity" element={<UserActivity />} /> {/* Add route for User Activity */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
