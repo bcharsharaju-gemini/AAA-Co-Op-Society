@@ -57,7 +57,9 @@ import {
   Sparkles,
   Banknote,
   Package,
-  Key, // Added for API Keys
+  Key,
+  Webhook,
+  FileBarChart, // Added for Custom Reports
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -91,9 +93,11 @@ const navigation = [
   { name: "Invoices", href: "/invoices", icon: Receipt },
   { name: "Billing", href: "/billing", icon: Banknote },
   { name: "Subscription Plans", href: "/subscription-plans", icon: Package },
-  { name: "API Keys", href: "/api-keys", icon: Key }, // Added API Keys
+  { name: "API Keys", href: "/api-keys", icon: Key },
+  { name: "Webhooks", href: "/webhooks", icon: Webhook },
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
+  { name: "Custom Reports", href: "/custom-reports", icon: FileBarChart }, // Added Custom Reports
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
   { name: "Audit Log", href: "/audit-log", icon: ScrollText },
   { name: "System Status", href: "/system-status", icon: Activity },
