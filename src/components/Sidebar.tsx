@@ -49,7 +49,9 @@ import {
   GitPullRequestArrow,
   Rocket,
   Map,
-  BookOpenText, // Added for Knowledge Base
+  BookOpenText,
+  GraduationCap,
+  Download, // Added for Downloads
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -62,6 +64,7 @@ const navigation = [
   { name: "Projects", href: "/projects", icon: FolderOpen },
   { name: "Tasks", href: "/tasks", icon: CheckSquare },
   { name: "Documents", href: "/documents", icon: File },
+  { name: "Downloads", href: "/downloads", icon: Download }, // Added Downloads
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
@@ -89,7 +92,8 @@ const navigation = [
   { name: "Maintenance", href: "/maintenance", icon: Wrench },
   { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
-  { name: "Knowledge Base", href: "/knowledge-base", icon: BookOpenText }, // Added Knowledge Base
+  { name: "Knowledge Base", href: "/knowledge-base", icon: BookOpenText },
+  { name: "Tutorials", href: "/tutorials", icon: GraduationCap },
   { name: "FAQ", href: "/faq", icon: MessageCircleQuestion },
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
   { name: "User Activity", href: "/user-activity", icon: UserCog },

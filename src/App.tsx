@@ -52,7 +52,9 @@ import Licenses from "./pages/Licenses";
 import Changelog from "./pages/Changelog";
 import GettingStarted from "./pages/GettingStarted";
 import Roadmap from "./pages/Roadmap";
-import KnowledgeBase from "./pages/KnowledgeBase"; // Import the KnowledgeBase page
+import KnowledgeBase from "./pages/KnowledgeBase";
+import Tutorials from "./pages/Tutorials";
+import Downloads from "./pages/Downloads"; // Import the Downloads page
 
 const queryClient = new QueryClient();
 
@@ -111,7 +113,9 @@ const App = () => (
           <Route path="/changelog" element={<Changelog />} />
           <Route path="/getting-started" element={<GettingStarted />} />
           <Route path="/roadmap" element={<Roadmap />} />
-          <Route path="/knowledge-base" element={<KnowledgeBase />} /> {/* Add route for Knowledge Base */}
+          <Route path="/knowledge-base" element={<KnowledgeBase />} />
+          <Route path="/tutorials" element={<Tutorials />} />
+          <Route path="/downloads" element={<Downloads />} /> {/* Add route for Downloads */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
