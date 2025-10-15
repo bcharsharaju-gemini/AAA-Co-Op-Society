@@ -3,7 +3,7 @@
 import { NavLink } from "react-router-dom";
 import {
   Home,
-  Users, // Used for Customers
+  Users,
   PieChart,
   Landmark,
   HandCoins,
@@ -17,7 +17,7 @@ import {
   PiggyBank,
   Receipt,
   BriefcaseBusiness,
-  Truck,
+  Truck, // Used for Shipments
   DollarSign,
   FolderOpen,
   CheckSquare,
@@ -67,6 +67,7 @@ import {
   Boxes,
   Handshake,
   ShoppingCart,
+  RotateCcw, // Added for Returns
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -75,7 +76,7 @@ const navigation = [
   { name: "Getting Started", href: "/getting-started", icon: Rocket },
   { name: "Members", href: "/members", icon: Users },
   { name: "Clients", href: "/clients", icon: BriefcaseBusiness },
-  { name: "Customers", href: "/customers", icon: Users }, // Added Customers
+  { name: "Customers", href: "/customers", icon: Users },
   { name: "Vendors", href: "/vendors", icon: Truck },
   { name: "Projects", href: "/projects", icon: FolderOpen },
   { name: "Tasks", href: "/tasks", icon: CheckSquare },
@@ -86,6 +87,8 @@ const navigation = [
   { name: "Products", href: "/products", icon: Package },
   { name: "Services", href: "/services", icon: Handshake },
   { name: "Orders", href: "/orders", icon: ShoppingCart },
+  { name: "Shipments", href: "/shipments", icon: Truck }, // Changed to Truck
+  { name: "Returns", href: "/returns", icon: RotateCcw },
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
