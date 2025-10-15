@@ -12,9 +12,7 @@ import {
   FileText,
   Wallet,
   Settings,
-  CreditCard,
-  ReceiptText,
-  LifeBuoy, // Added for Help & Support
+  CreditCard, // Added for Transactions
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -26,12 +24,10 @@ const navigation = [
   { name: "Loans", href: "/loans", icon: HandCoins },
   { name: "Deposits", href: "/deposits", icon: Briefcase },
   { name: "Withdrawals", href: "/withdrawals", icon: Wallet },
-  { name: "Transactions", href: "/transactions", icon: CreditCard },
-  { name: "Expenses", href: "/expenses", icon: ReceiptText },
+  { name: "Transactions", href: "/transactions", icon: CreditCard }, // Added Transactions
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Settings", href: "/settings", icon: Settings },
-  { name: "Help & Support", href: "/help-and-support", icon: LifeBuoy }, // Added Help & Support
 ];
 
 export function Sidebar({ className }: { className?: string }) {
