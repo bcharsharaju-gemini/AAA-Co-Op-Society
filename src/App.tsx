@@ -56,7 +56,9 @@ import KnowledgeBase from "./pages/KnowledgeBase";
 import Tutorials from "./pages/Tutorials";
 import Resources from "./pages/Resources";
 import Announcements from "./pages/Announcements";
-import DashboardSettings from "./pages/DashboardSettings"; // Import the DashboardSettings page
+import DashboardSettings from "./pages/DashboardSettings";
+import Personalization from "./pages/Personalization";
+import Billing from "./pages/Billing"; // Import the Billing page
 
 const queryClient = new QueryClient();
 
@@ -106,6 +108,9 @@ const App = () => (
           <Route path="/user-activity" element={<UserActivity />} />
           <Route path="/security" element={<Security />} />
           <Route path="/appearance-settings" element={<AppearanceSettings />} />
+          <Route path="/dashboard-settings" element={<DashboardSettings />} />
+          <Route path="/personalization" element={<Personalization />} />
+          <Route path="/billing" element={<Billing />} /> {/* Add route for Billing */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact-us" element={<ContactUs />} />
@@ -119,7 +124,6 @@ const App = () => (
           <Route path="/tutorials" element={<Tutorials />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/announcements" element={<Announcements />} />
-          <Route path="/dashboard-settings" element={<DashboardSettings />} /> {/* Add route for Dashboard Settings */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

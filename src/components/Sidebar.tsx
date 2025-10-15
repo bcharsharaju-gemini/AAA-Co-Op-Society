@@ -53,7 +53,9 @@ import {
   GraduationCap,
   Link,
   Megaphone,
-  LayoutDashboard, // Added for Dashboard Settings
+  LayoutDashboard,
+  Sparkles,
+  Banknote, // Changed from ReceiptDollar to Banknote
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -85,6 +87,7 @@ const navigation = [
   { name: "Expenses", href: "/expenses", icon: ReceiptText },
   { name: "Budgets", href: "/budgets", icon: PiggyBank },
   { name: "Invoices", href: "/invoices", icon: Receipt },
+  { name: "Billing", href: "/billing", icon: Banknote }, // Changed icon here
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
@@ -101,7 +104,8 @@ const navigation = [
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
   { name: "User Activity", href: "/user-activity", icon: UserCog },
   { name: "Appearance Settings", href: "/appearance-settings", icon: Palette },
-  { name: "Dashboard Settings", href: "/dashboard-settings", icon: LayoutDashboard }, // Added Dashboard Settings
+  { name: "Personalization", href: "/personalization", icon: Sparkles },
+  { name: "Dashboard Settings", href: "/dashboard-settings", icon: LayoutDashboard },
   { name: "Privacy Policy", href: "/privacy-policy", icon: ShieldQuestion },
   { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList },
   { name: "Licenses", href: "/licenses", icon: Gavel },
