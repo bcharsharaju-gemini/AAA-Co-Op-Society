@@ -55,7 +55,9 @@ import {
   Megaphone,
   LayoutDashboard,
   Sparkles,
-  Banknote, // Changed from ReceiptDollar to Banknote
+  Banknote,
+  Package,
+  Key, // Added for API Keys
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -87,7 +89,9 @@ const navigation = [
   { name: "Expenses", href: "/expenses", icon: ReceiptText },
   { name: "Budgets", href: "/budgets", icon: PiggyBank },
   { name: "Invoices", href: "/invoices", icon: Receipt },
-  { name: "Billing", href: "/billing", icon: Banknote }, // Changed icon here
+  { name: "Billing", href: "/billing", icon: Banknote },
+  { name: "Subscription Plans", href: "/subscription-plans", icon: Package },
+  { name: "API Keys", href: "/api-keys", icon: Key }, // Added API Keys
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Analytics", href: "/analytics", icon: BarChart3 },

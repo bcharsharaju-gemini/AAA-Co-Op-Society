@@ -58,7 +58,9 @@ import Resources from "./pages/Resources";
 import Announcements from "./pages/Announcements";
 import DashboardSettings from "./pages/DashboardSettings";
 import Personalization from "./pages/Personalization";
-import Billing from "./pages/Billing"; // Import the Billing page
+import Billing from "./pages/Billing";
+import SubscriptionPlans from "./pages/SubscriptionPlans";
+import APIKeys from "./pages/APIKeys"; // Import the APIKeys page
 
 const queryClient = new QueryClient();
 
@@ -110,7 +112,9 @@ const App = () => (
           <Route path="/appearance-settings" element={<AppearanceSettings />} />
           <Route path="/dashboard-settings" element={<DashboardSettings />} />
           <Route path="/personalization" element={<Personalization />} />
-          <Route path="/billing" element={<Billing />} /> {/* Add route for Billing */}
+          <Route path="/billing" element={<Billing />} />
+          <Route path="/subscription-plans" element={<SubscriptionPlans />} />
+          <Route path="/api-keys" element={<APIKeys />} /> {/* Add route for API Keys */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact-us" element={<ContactUs />} />
