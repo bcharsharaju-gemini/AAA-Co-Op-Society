@@ -12,7 +12,9 @@ import {
   FileText,
   Wallet,
   Settings,
-  CreditCard, // Added for Transactions
+  CreditCard,
+  ReceiptText,
+  PiggyBank, // Added for Budgets
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -24,7 +26,9 @@ const navigation = [
   { name: "Loans", href: "/loans", icon: HandCoins },
   { name: "Deposits", href: "/deposits", icon: Briefcase },
   { name: "Withdrawals", href: "/withdrawals", icon: Wallet },
-  { name: "Transactions", href: "/transactions", icon: CreditCard }, // Added Transactions
+  { name: "Transactions", href: "/transactions", icon: CreditCard },
+  { name: "Expenses", href: "/expenses", icon: ReceiptText },
+  { name: "Budgets", href: "/budgets", icon: PiggyBank }, // Added Budgets
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Settings", href: "/settings", icon: Settings },
