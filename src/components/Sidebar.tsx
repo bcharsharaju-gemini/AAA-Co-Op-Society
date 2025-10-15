@@ -45,12 +45,15 @@ import {
   Mail,
   Info,
   MessageCircleQuestion,
-  Gavel, // Added for Licenses
+  Gavel,
+  GitPullRequestArrow,
+  Rocket, // Added for Getting Started
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
+  { name: "Getting Started", href: "/getting-started", icon: Rocket }, // Added Getting Started
   { name: "Members", href: "/members", icon: Users },
   { name: "Clients", href: "/clients", icon: BriefcaseBusiness },
   { name: "Vendors", href: "/vendors", icon: Truck },
@@ -90,7 +93,8 @@ const navigation = [
   { name: "Appearance Settings", href: "/appearance-settings", icon: Palette },
   { name: "Privacy Policy", href: "/privacy-policy", icon: ShieldQuestion },
   { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList },
-  { name: "Licenses", href: "/licenses", icon: Gavel }, // Added Licenses
+  { name: "Licenses", href: "/licenses", icon: Gavel },
+  { name: "Changelog", href: "/changelog", icon: GitPullRequestArrow },
   { name: "Contact Us", href: "/contact-us", icon: Mail },
   { name: "About Us", href: "/about-us", icon: Info },
   { name: "Settings", href: "/settings", icon: Settings },

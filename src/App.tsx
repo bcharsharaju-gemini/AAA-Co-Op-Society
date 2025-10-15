@@ -48,7 +48,9 @@ import TermsOfService from "./pages/TermsOfService";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/FAQ";
-import Licenses from "./pages/Licenses"; // Import the Licenses page
+import Licenses from "./pages/Licenses";
+import Changelog from "./pages/Changelog";
+import GettingStarted from "./pages/GettingStarted"; // Import the GettingStarted page
 
 const queryClient = new QueryClient();
 
@@ -103,7 +105,9 @@ const App = () => (
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/licenses" element={<Licenses />} /> {/* Add route for Licenses */}
+          <Route path="/licenses" element={<Licenses />} />
+          <Route path="/changelog" element={<Changelog />} />
+          <Route path="/getting-started" element={<GettingStarted />} /> {/* Add route for Getting Started */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
