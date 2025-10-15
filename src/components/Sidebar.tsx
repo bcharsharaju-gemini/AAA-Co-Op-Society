@@ -26,7 +26,8 @@ import {
   MessageSquare,
   Bell,
   UsersRound,
-  BarChart3, // Added for Analytics
+  BarChart3,
+  LifeBuoy, // Added for Support
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -54,7 +55,8 @@ const navigation = [
   { name: "Invoices", href: "/invoices", icon: Receipt },
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
-  { name: "Analytics", href: "/analytics", icon: BarChart3 }, // Added Analytics
+  { name: "Analytics", href: "/analytics", icon: BarChart3 },
+  { name: "Support", href: "/support", icon: LifeBuoy }, // Added Support
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 

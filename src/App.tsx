@@ -28,7 +28,8 @@ import Calendar from "./pages/Calendar";
 import Messages from "./pages/Messages";
 import Notifications from "./pages/Notifications";
 import Team from "./pages/Team";
-import Analytics from "./pages/Analytics"; // Import the Analytics page
+import Analytics from "./pages/Analytics";
+import Support from "./pages/Support"; // Import the Support page
 
 const queryClient = new QueryClient();
 
@@ -62,8 +63,9 @@ const App = () => (
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/accounting" element={<Accounting />} />
           <Route path="/reports" element={<Reports />} />
+          <Route path="/analytics" element={<Analytics />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/analytics" element={<Analytics />} /> {/* Add route for Analytics */}
+          <Route path="/support" element={<Support />} /> {/* Add route for Support */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
