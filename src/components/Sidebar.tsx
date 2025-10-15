@@ -10,8 +10,9 @@ import {
   Briefcase,
   BookOpen,
   FileText,
-  Wallet, // Added for Withdrawals
-  Settings, // Added for Settings
+  Wallet,
+  Settings,
+  CreditCard, // Added for Transactions
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -22,10 +23,11 @@ const navigation = [
   { name: "Savings", href: "/savings", icon: Landmark },
   { name: "Loans", href: "/loans", icon: HandCoins },
   { name: "Deposits", href: "/deposits", icon: Briefcase },
-  { name: "Withdrawals", href: "/withdrawals", icon: Wallet }, // Added Withdrawals
+  { name: "Withdrawals", href: "/withdrawals", icon: Wallet },
+  { name: "Transactions", href: "/transactions", icon: CreditCard }, // Added Transactions
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
-  { name: "Settings", href: "/settings", icon: Settings }, // Added Settings
+  { name: "Settings", href: "/settings", icon: Settings },
 ];
 
 export function Sidebar({ className }: { className?: string }) {
