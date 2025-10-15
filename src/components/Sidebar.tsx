@@ -16,14 +16,18 @@ import {
   ReceiptText,
   PiggyBank,
   Receipt,
-  BriefcaseBusiness, // Added for Clients
+  BriefcaseBusiness,
+  Truck,
+  DollarSign, // Added for Payroll
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
   { name: "Members", href: "/members", icon: Users },
-  { name: "Clients", href: "/clients", icon: BriefcaseBusiness }, // Added Clients
+  { name: "Clients", href: "/clients", icon: BriefcaseBusiness },
+  { name: "Vendors", href: "/vendors", icon: Truck },
+  { name: "Payroll", href: "/payroll", icon: DollarSign }, // Added Payroll
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
   { name: "Loans", href: "/loans", icon: HandCoins },
