@@ -29,7 +29,8 @@ import Messages from "./pages/Messages";
 import Notifications from "./pages/Notifications";
 import Team from "./pages/Team";
 import Analytics from "./pages/Analytics";
-import Support from "./pages/Support"; // Import the Support page
+import Support from "./pages/Support";
+import Profile from "./pages/Profile"; // Import the Profile page
 
 const queryClient = new QueryClient();
 
@@ -64,8 +65,9 @@ const App = () => (
           <Route path="/accounting" element={<Accounting />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/support" element={<Support />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/support" element={<Support />} /> {/* Add route for Support */}
+          <Route path="/profile" element={<Profile />} /> {/* Add route for Profile */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
