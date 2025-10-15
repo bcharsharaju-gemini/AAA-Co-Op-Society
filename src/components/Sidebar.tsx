@@ -49,7 +49,9 @@ import {
   GitPullRequestArrow,
   Rocket,
   Map,
-  BookOpenText, // Added for Knowledge Base
+  BookOpenText,
+  GraduationCap,
+  BookUser, // Added for User Guides
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -89,7 +91,9 @@ const navigation = [
   { name: "Maintenance", href: "/maintenance", icon: Wrench },
   { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
-  { name: "Knowledge Base", href: "/knowledge-base", icon: BookOpenText }, // Added Knowledge Base
+  { name: "Knowledge Base", href: "/knowledge-base", icon: BookOpenText },
+  { name: "Tutorials", href: "/tutorials", icon: GraduationCap },
+  { name: "User Guides", href: "/user-guides", icon: BookUser }, // Added User Guides
   { name: "FAQ", href: "/faq", icon: MessageCircleQuestion },
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
   { name: "User Activity", href: "/user-activity", icon: UserCog },
