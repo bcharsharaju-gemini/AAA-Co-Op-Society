@@ -50,7 +50,9 @@ import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/FAQ";
 import Licenses from "./pages/Licenses";
 import Changelog from "./pages/Changelog";
-import GettingStarted from "./pages/GettingStarted"; // Import the GettingStarted page
+import GettingStarted from "./pages/GettingStarted";
+import Roadmap from "./pages/Roadmap";
+import KnowledgeBase from "./pages/KnowledgeBase"; // Import the KnowledgeBase page
 
 const queryClient = new QueryClient();
 
@@ -107,7 +109,9 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/licenses" element={<Licenses />} />
           <Route path="/changelog" element={<Changelog />} />
-          <Route path="/getting-started" element={<GettingStarted />} /> {/* Add route for Getting Started */}
+          <Route path="/getting-started" element={<GettingStarted />} />
+          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/knowledge-base" element={<KnowledgeBase />} /> {/* Add route for Knowledge Base */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

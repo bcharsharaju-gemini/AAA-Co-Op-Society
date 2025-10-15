@@ -47,13 +47,15 @@ import {
   MessageCircleQuestion,
   Gavel,
   GitPullRequestArrow,
-  Rocket, // Added for Getting Started
+  Rocket,
+  Map,
+  BookOpenText, // Added for Knowledge Base
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
-  { name: "Getting Started", href: "/getting-started", icon: Rocket }, // Added Getting Started
+  { name: "Getting Started", href: "/getting-started", icon: Rocket },
   { name: "Members", href: "/members", icon: Users },
   { name: "Clients", href: "/clients", icon: BriefcaseBusiness },
   { name: "Vendors", href: "/vendors", icon: Truck },
@@ -87,6 +89,7 @@ const navigation = [
   { name: "Maintenance", href: "/maintenance", icon: Wrench },
   { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
+  { name: "Knowledge Base", href: "/knowledge-base", icon: BookOpenText }, // Added Knowledge Base
   { name: "FAQ", href: "/faq", icon: MessageCircleQuestion },
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
   { name: "User Activity", href: "/user-activity", icon: UserCog },
@@ -95,6 +98,7 @@ const navigation = [
   { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList },
   { name: "Licenses", href: "/licenses", icon: Gavel },
   { name: "Changelog", href: "/changelog", icon: GitPullRequestArrow },
+  { name: "Roadmap", href: "/roadmap", icon: Map },
   { name: "Contact Us", href: "/contact-us", icon: Mail },
   { name: "About Us", href: "/about-us", icon: Info },
   { name: "Settings", href: "/settings", icon: Settings },
