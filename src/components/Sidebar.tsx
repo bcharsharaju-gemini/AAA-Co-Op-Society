@@ -43,7 +43,9 @@ import {
   ShieldQuestion,
   ClipboardList,
   Mail,
-  Info, // Added for About Us
+  Info,
+  MessageCircleQuestion,
+  Gavel, // Added for Licenses
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -82,13 +84,15 @@ const navigation = [
   { name: "Maintenance", href: "/maintenance", icon: Wrench },
   { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
+  { name: "FAQ", href: "/faq", icon: MessageCircleQuestion },
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
   { name: "User Activity", href: "/user-activity", icon: UserCog },
   { name: "Appearance Settings", href: "/appearance-settings", icon: Palette },
   { name: "Privacy Policy", href: "/privacy-policy", icon: ShieldQuestion },
   { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList },
+  { name: "Licenses", href: "/licenses", icon: Gavel }, // Added Licenses
   { name: "Contact Us", href: "/contact-us", icon: Mail },
-  { name: "About Us", href: "/about-us", icon: Info }, // Added About Us
+  { name: "About Us", href: "/about-us", icon: Info },
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 
