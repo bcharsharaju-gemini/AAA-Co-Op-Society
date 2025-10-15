@@ -10,7 +10,7 @@ import Shares from "./pages/Shares";
 import Reports from "./pages/Reports";
 import Savings from "./pages/Savings";
 import Loans from "./pages/Loans";
-import Deposits from "././pages/Deposits";
+import Deposits from "./pages/Deposits";
 import Withdrawals from "./pages/Withdrawals";
 import Accounting from "./pages/Accounting";
 import Settings from "./pages/Settings";
@@ -34,7 +34,9 @@ import Profile from "./pages/Profile";
 import RolesPermissions from "./pages/RolesPermissions";
 import Users from "./pages/Users";
 import AuditLog from "./pages/AuditLog";
-import SystemStatus from "./pages/SystemStatus"; // Import the SystemStatus page
+import SystemStatus from "./pages/SystemStatus";
+import NotificationSettings from "./pages/NotificationSettings";
+import HelpCenter from "./pages/HelpCenter"; // Import the HelpCenter page
 
 const queryClient = new QueryClient();
 
@@ -72,10 +74,12 @@ const App = () => (
           <Route path="/reports" element={<Reports />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/audit-log" element={<AuditLog />} />
+          <Route path="/system-status" element={<SystemStatus />} />
           <Route path="/support" element={<Support />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/system-status" element={<SystemStatus />} /> {/* Add route for System Status */}
+          <Route path="/notification-settings" element={<NotificationSettings />} />
+          <Route path="/help-center" element={<HelpCenter />} /> {/* Add route for Help Center */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
