@@ -10,7 +10,9 @@ import Shares from "./pages/Shares";
 import Reports from "./pages/Reports";
 import Savings from "./pages/Savings";
 import Loans from "./pages/Loans";
-import Deposits from "./pages/Deposits"; // Import the Deposits page
+import Deposits from "./pages/Deposits";
+import Withdrawals from "./pages/Withdrawals";
+import Accounting from "./pages/Accounting"; // Import the Accounting page
 
 const queryClient = new QueryClient();
 
@@ -26,7 +28,9 @@ const App = () => (
           <Route path="/shares" element={<Shares />} />
           <Route path="/savings" element={<Savings />} />
           <Route path="/loans" element={<Loans />} />
-          <Route path="/deposits" element={<Deposits />} /> {/* Add route for Deposits */}
+          <Route path="/deposits" element={<Deposits />} />
+          <Route path="/withdrawals" element={<Withdrawals />} />
+          <Route path="/accounting" element={<Accounting />} /> {/* Add route for Accounting */}
           <Route path="/reports" element={<Reports />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
