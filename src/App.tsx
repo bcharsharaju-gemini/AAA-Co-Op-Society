@@ -54,7 +54,9 @@ import GettingStarted from "./pages/GettingStarted";
 import Roadmap from "./pages/Roadmap";
 import KnowledgeBase from "./pages/KnowledgeBase";
 import Tutorials from "./pages/Tutorials";
-import Resources from "./pages/Resources"; // Import the Resources page
+import Resources from "./pages/Resources";
+import Announcements from "./pages/Announcements";
+import DashboardSettings from "./pages/DashboardSettings"; // Import the DashboardSettings page
 
 const queryClient = new QueryClient();
 
@@ -115,7 +117,9 @@ const App = () => (
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/knowledge-base" element={<KnowledgeBase />} />
           <Route path="/tutorials" element={<Tutorials />} />
-          <Route path="/resources" element={<Resources />} /> {/* Add route for Resources */}
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/announcements" element={<Announcements />} />
+          <Route path="/dashboard-settings" element={<DashboardSettings />} /> {/* Add route for Dashboard Settings */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

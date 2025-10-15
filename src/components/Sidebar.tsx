@@ -51,7 +51,9 @@ import {
   Map,
   BookOpenText,
   GraduationCap,
-  Link, // Added for Resources
+  Link,
+  Megaphone,
+  LayoutDashboard, // Added for Dashboard Settings
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -67,6 +69,7 @@ const navigation = [
   { name: "Calendar", href: "/calendar", icon: CalendarDays },
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
+  { name: "Announcements", href: "/announcements", icon: Megaphone },
   { name: "Notification Settings", href: "/notification-settings", icon: BellRing },
   { name: "Team", href: "/team", icon: UsersRound },
   { name: "Users", href: "/users", icon: Users2 },
@@ -93,11 +96,12 @@ const navigation = [
   { name: "Help Center", href: "/help-center", icon: HelpCircle },
   { name: "Knowledge Base", href: "/knowledge-base", icon: BookOpenText },
   { name: "Tutorials", href: "/tutorials", icon: GraduationCap },
-  { name: "Resources", href: "/resources", icon: Link }, // Added Resources
+  { name: "Resources", href: "/resources", icon: Link },
   { name: "FAQ", href: "/faq", icon: MessageCircleQuestion },
   { name: "Feedback", href: "/feedback", icon: MessageSquarePlus },
   { name: "User Activity", href: "/user-activity", icon: UserCog },
   { name: "Appearance Settings", href: "/appearance-settings", icon: Palette },
+  { name: "Dashboard Settings", href: "/dashboard-settings", icon: LayoutDashboard }, // Added Dashboard Settings
   { name: "Privacy Policy", href: "/privacy-policy", icon: ShieldQuestion },
   { name: "Terms of Service", href: "/terms-of-service", icon: ClipboardList },
   { name: "Licenses", href: "/licenses", icon: Gavel },
