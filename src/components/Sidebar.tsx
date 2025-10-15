@@ -3,7 +3,7 @@
 import { NavLink } from "react-router-dom";
 import {
   Home,
-  Users,
+  Users, // Used for Members
   PieChart,
   Landmark,
   HandCoins,
@@ -25,9 +25,11 @@ import {
   CalendarDays,
   MessageSquare,
   Bell,
-  UsersRound,
+  UsersRound, // Used for Team
   BarChart3,
-  LifeBuoy, // Added for Support
+  LifeBuoy,
+  ShieldCheck,
+  Users2, // Added for Users
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -43,6 +45,8 @@ const navigation = [
   { name: "Messages", href: "/messages", icon: MessageSquare },
   { name: "Notifications", href: "/notifications", icon: Bell },
   { name: "Team", href: "/team", icon: UsersRound },
+  { name: "Users", href: "/users", icon: Users2 }, // Added Users with Users2 icon
+  { name: "Roles & Permissions", href: "/roles-permissions", icon: ShieldCheck },
   { name: "Payroll", href: "/payroll", icon: DollarSign },
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
@@ -56,7 +60,7 @@ const navigation = [
   { name: "Accounting", href: "/accounting", icon: BookOpen },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "Analytics", href: "/analytics", icon: BarChart3 },
-  { name: "Support", href: "/support", icon: LifeBuoy }, // Added Support
+  { name: "Support", href: "/support", icon: LifeBuoy },
   { name: "Settings", href: "/settings", icon: Settings },
 ];
 

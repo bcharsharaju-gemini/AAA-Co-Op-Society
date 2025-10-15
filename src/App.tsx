@@ -30,7 +30,9 @@ import Notifications from "./pages/Notifications";
 import Team from "./pages/Team";
 import Analytics from "./pages/Analytics";
 import Support from "./pages/Support";
-import Profile from "./pages/Profile"; // Import the Profile page
+import Profile from "./pages/Profile";
+import RolesPermissions from "./pages/RolesPermissions";
+import Users from "./pages/Users"; // Import the Users page
 
 const queryClient = new QueryClient();
 
@@ -53,6 +55,7 @@ const App = () => (
           <Route path="/messages" element={<Messages />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/roles-permissions" element={<RolesPermissions />} />
           <Route path="/shares" element={<Shares />} />
           <Route path="/savings" element={<Savings />} />
           <Route path="/loans" element={<Loans />} />
@@ -67,7 +70,8 @@ const App = () => (
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/support" element={<Support />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/profile" element={<Profile />} /> {/* Add route for Profile */}
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/users" element={<Users />} /> {/* Add route for Users */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
