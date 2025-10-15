@@ -20,7 +20,9 @@ import {
   Truck,
   DollarSign,
   FolderOpen,
-  CheckSquare, // Added for Tasks
+  CheckSquare,
+  File,
+  CalendarDays, // Added for Calendar
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -30,7 +32,9 @@ const navigation = [
   { name: "Clients", href: "/clients", icon: BriefcaseBusiness },
   { name: "Vendors", href: "/vendors", icon: Truck },
   { name: "Projects", href: "/projects", icon: FolderOpen },
-  { name: "Tasks", href: "/tasks", icon: CheckSquare }, // Added Tasks
+  { name: "Tasks", href: "/tasks", icon: CheckSquare },
+  { name: "Documents", href: "/documents", icon: File },
+  { name: "Calendar", href: "/calendar", icon: CalendarDays }, // Added Calendar
   { name: "Payroll", href: "/payroll", icon: DollarSign },
   { name: "Shares", href: "/shares", icon: PieChart },
   { name: "Savings", href: "/savings", icon: Landmark },
